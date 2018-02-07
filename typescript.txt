@@ -1,0 +1,14 @@
+var Country: string = 'India';
+var Capital: string = 'Delhi';
+//var s: string = 'The capital of ' + Country + ' is ' + Capital;
+var s: string = `The capital of ${Country} is ${Capital}`;
+alert(s);
+
+var a = [1, 2, 1, 2];
+function search(a: number[], x: number):number{
+    var x: number;
+   
+    retun x;
+}
+alert(search(a, 1));
+

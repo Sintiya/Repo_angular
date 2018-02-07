@@ -1,0 +1,34 @@
+<div [align]="position">
+    <h1>  product works!</h1>   
+</div> 
+  
+  Product details : 
+ <!-- discount price :  {{ discont() }} -->
+
+ <div *ngFor = "let product of products">
+   id: {{product.id}}<br>
+   name: {{product.name|titlecase}}<br>
+   price: {{product.price|currency:'INR':true:'5.2'}}<br>
+   price_range: {{product.price|myPipe:scale}}<br>
+ </div><br>
+ <div>{{date|date:'medium'|uppercase}}</div>
+<div>
+<button [disabled]="bvalue">button</button><br>
+<img [src]="imageName" height="42" width="42"><br>
+Name:<input name="ip"  (keyup)="dispText($event)"/>
+<p [hidden]="pvalue">Hello {{text}}</p>
+</div>
+
+<div>
+    Name:<input  [(ngModel)]="name"/><br>
+    RetypeName:{{name}}
+</div>
+
+<div>
+    <button name="inc" (click)="incBval($event)">Increment</button>
+    {{buttonval}}
+    <button name="dec" (click)="decBval($event)">Decrement</button>
+</div>
+<h1 [ngStyle]="{'color':mycolor,'background-color':mybgcolor}">heading</h1>
+<h1 [ngClass]="{class2:ctwo,class1:cone}">Test ngClass</h1>
+<button (click)="toggle()">Toggle Style</button>

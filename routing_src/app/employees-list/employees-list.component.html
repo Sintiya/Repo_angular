@@ -1,0 +1,21 @@
+<div align="center">
+  <h1 align="center"> Employees List </h1>
+  <table align="center" border="solid" >
+    <thead>
+    <tr>
+      <td align="center"><b>Employee No</b></td>
+      <td align="center"><b>Employee Name</b></td>
+      <td align="center"><b>Employee Age</b></td>
+      <td align="center"><b>Employee Salary</b></td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let employee of employees">
+      <td align="center">{{employee.empno}}</td>
+      <td align="center">{{employee.empname}}</td>
+      <td align="center">{{employee.age}}</td>
+      <td align="center">{{employee.salary}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

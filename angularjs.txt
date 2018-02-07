@@ -1,0 +1,20 @@
+npm i -g typescript
+npm i -g @angular/cli
+
+
+angular/cli for ng command workkin
+
+ng command to create new app
+
+
+
+tsc hello.ts complie hello.js
+
+
+node js in server side
+
+repl 
+
+
+
+npm repo
